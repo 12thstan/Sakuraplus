@@ -54,7 +54,7 @@
     mashiro_option.v_appId = "";//
     mashiro_option.v_appKey = "";//
     mashiro_option.mathjax = "1";
-    mashiro_option.copyright_enable = "false" ;
+    mashiro_option.copyright_enable = "true" ;
     mashiro_option.copyright_minCharNumber = parseInt("120") ;
     mashiro_option.copyright_description = "本文章著作权归作者所有，任何形式的转载都请注明出处。" ;
     mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
@@ -66,7 +66,7 @@
     /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-    var bg = "".split(",");
+    var bg = "https://pic.imgdb.cn/item/624aa2ca239250f7c5145d1d.jpg,https://pic.imgdb.cn/item/624aa2ca239250f7c5145d18.jpg,https://pic.imgdb.cn/item/624aa2ca239250f7c5145d11.jpg,https://pic.imgdb.cn/item/624aa2ca239250f7c5145d09.jpg,https://pic.imgdb.cn/item/626e3242239250f7c515bad6.png,https://pic.imgdb.cn/item/626e3242239250f7c515bad1.jpg,https://pic.imgdb.cn/item/626e3242239250f7c515baca.jpg,https://img.afqaq.com/images/2022/03/10/dcd0aa28f3537f720adbdf7f9f0625b6_preview-00_00_00-00_00_30.gif".split(",");
     var bgindex = Math.floor(Math.random()*bg.length);
     if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
       alert('朋友，IE浏览器未适配哦~');
@@ -243,16 +243,6 @@
               </li>
             
               <li>
-                <a href="/comment/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-                    留言板
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
                 <a href="/about/">
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
@@ -285,64 +275,206 @@
 
       
       <!-- body -->
-        <div class="pattern-center-blank"></div>
-  
-  <div id="content" class="site-content">
-    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      
-      <!-- .entry-content -->
-      
+      <div class="pattern-center-blank">
+</div>
+<div class="pattern-center ">
+    <div class="pattern-attachment-img">
+        <img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200303155335.webp" data-src=""
+            class="lazyload" onerror="imgError(this,3)"
+            style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    </div>
+    <style type="text/css">
+        #contentss {
+            position: relative;
+            width: 800px;
+            height: 900px;
+            max-height: 1200px;
+            text-align: center;
+            border: 0;
+            color: rgba(0, 0, 0, .87);
+            background: rgba(255, 255, 255, .8);
+            background-size: cover;
+            margin: 0 auto;
+        }
+    </style>
+    <header class="pattern-header ">
+        <h1 class="entry-title">
+            文章数据统计</h1>
+    </header>
+</div>
+<div id="contentss">
+    <style type="text/css">
+    #posts-chart,
+    #categories-chart,
+    #tags-chart {
+        width: 100%;
+        height: 300px;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+    }
+</style>
 
+<div id="postCharts" class="post-charts">
+    <div class="title center-align" data-aos="zoom-in-up">
+    </div>
+    <div class="row">
+        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
+            <div id="posts-chart"></div>
+        </div>
 
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<div id="gitalk-container" class="comment"></div> 
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="/js/md5.min.js"></script>
-<script type="text/javascript">
-	var gitalk = new Gitalk({
-  	clientID: '',
-  	clientSecret: '',
-  	repo: 'cungudafa.github.io',
-  	owner: 'cungudafa',
-	admin: ['cungudafa'],
-	distractionFreeMode: 'true',
-    id: md5(location.pathname)
-})
-gitalk.render('gitalk-container') 
-</script>
+        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
+            <div id="categories-chart"></div>
+        </div>
 
-      <div class="single-reward">
-        <div class="reward-open">赏
-          <div class="reward-main">
-            <ul class="reward-row">
-              <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/12thstan/cdn/img/custom/donate/AliPay.jpg"></li>
-              <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/12thstan/cdn/img/custom/donate/WeChatPay.png"></li>
-            </ul>
-          </div>
+        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
+            <div id="tags-chart"></div>
         </div>
-      </div>
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent">
-      </div>
-      <footer class="post-footer">
-        <div class="post-lincenses" style="color: #ff9966;">
-          欢迎转载，转载时请注明来源哦！
-          <br>
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow">
-            <i class="fa fa-creative-commons" aria-hidden="true"></i>知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-        </div>
-        <div class="post-tags">
-        </div>
-        <div class="post-share">
-          <div class="social-share sharehidden share-component"></div>
-          <i class="iconfont show-share icon-forward"></i>
-        </div>
-      </footer><!-- .entry-footer -->
-    </article>
-    <!-- #post-## -->
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/echarts.min.js"></script>
+<script>
+    let postsChart = echarts.init(document.getElementById('posts-chart'));
+    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
+    let tagsChart = echarts.init(document.getElementById('tags-chart'));
+
     
-  </div><!-- #primary -->
-  </div>
 
+    let postsOption = {
+        title: {
+            text: '文章发布统计图',
+            top: 0,
+            x: 'center'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        xAxis: {
+            type: 'category',
+            data: ["2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05"]
+        },
+        yAxis: {
+            type: 'value',
+        },
+        series: [{
+            name: 'postsNumberName',
+            type: 'line',
+            color: ['#6772e5'],
+            data: [0,0,0,0,0,0,0,0,0,0,0,0,1] ,
+            markPoint: {
+                symbolSize: 45,
+                color: ['#fa755a', '#3ecf8e', '#82d3f4'],
+                data: [{
+                    type: 'max',
+                    itemStyle: {
+                        color: ['#3ecf8e']
+                    },
+                    name: 'maximum'
+                }, {
+                    type: 'min',
+                    itemStyle: {
+                        color: ['#fa755a']
+                    },
+                    name: 'minimum'
+                }]
+            },
+            markLine: {
+                itemStyle: {
+                    color: ['#ab47bc']
+                },
+                data: [{
+                    type: 'average',
+                    name: 'average'
+                }]
+            }
+        }]
+    };
+
+    
+
+    let categoriesOption = {
+        title: {
+            text: '文章分类统计图',
+            top: 1,
+            x: 'center'
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        series: [{
+            name: '分类',
+            type: 'pie',
+            radius: '50%',
+            color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47',
+                '#26A69A'
+            ],
+            data: [{"name":"实用小技巧","value":1}] ,
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }]
+    };
+
+    
+
+    let tagsOption = {
+        title: {
+            text: 'Top10标签统计图 ',
+            top: 2,
+            x: 'center'
+        },
+        tooltip: {},
+        xAxis: [{
+            type: 'category',
+            data: ["分享"]
+        }],
+        yAxis: [{
+            type: 'value'
+        }],
+        series: [{
+            type: 'bar',
+            color: ['#82d3f4'],
+            barWidth: 18,
+            data: [1] ,
+            markPoint: {
+                symbolSize: 45,
+                data: [{
+                    type: 'max',
+                    itemStyle: {
+                        color: ['#3ecf8e']
+                    },
+                    name: 'maximum'
+                }, {
+                    type: 'min',
+                    itemStyle: {
+                        color: ['#fa755a']
+                    },
+                    name: 'minimum'
+                }],
+            },
+            markLine: {
+                itemStyle: {
+                    color: ['#ab47bc']
+                },
+                data: [{
+                    type: 'average',
+                    name: 'average'
+                }]
+            }
+        }]
+    };
+
+    // render the charts
+    postsChart.setOption(postsOption);
+    categoriesChart.setOption(categoriesOption);
+    tagsChart.setOption(tagsOption);
+</script>
+</div>
       <!-- body.end -->
     </div>
     <!-- search -->    
@@ -350,7 +482,7 @@ gitalk.render('gitalk-container')
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -362,10 +494,10 @@ gitalk.render('gitalk-container')
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            // PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -413,7 +545,7 @@ gitalk.render('gitalk-container')
             <span style="color: #b9b9b9;padding-left: 20px;">
               <!-- 全网站字数统计wordcount -->
               
-              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">73</span>字</span>
+              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">1.3k</span>字</span>
               
               <!-- 不蒜子网页计数器 -->
               
@@ -487,9 +619,9 @@ gitalk.render('gitalk-container')
 <script type="text/javascript">
   /* <![CDATA[ */
   if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    var Poi = {"pjax":"0","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+    var Poi = {"pjax":"0","movies":{"url": "https://cdn.jsdelivr.net/gh/12thstan/js@1.2.7.2/video","name":"iot 01.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
   } else {
-    var Poi = {"pjax":"0","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+    var Poi = {"pjax":"0","movies":{"url": "https://cdn.jsdelivr.net/gh/12thstan/js@1.2.7.2/video","name":"iot 01.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
   }
   /* ]]> */
   
@@ -600,16 +732,6 @@ gitalk.render('gitalk-container')
       </li>
     
       <li>
-        <a href="/comment/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
-            留言板
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
         <a href="/about/">
           <span class="faa-parent animated-hover">
             <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
@@ -638,6 +760,74 @@ gitalk.render('gitalk-container')
 </div>
 <button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    enable="true"
+
+    id="4989347813"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+>
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
    <!-- pages壁纸切换 -->
  
     <div class="skin-menu no-select" id="mainskin"  style="position: fixed">

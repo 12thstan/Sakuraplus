@@ -6,7 +6,7 @@
   <!-- <meta name="baidu-site-verification" content="LukfTcyXmC" /> -->
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Reverse -s blog</title>
+  <title itemprop="name">如何优雅的加速Github | Reverse -s blog</title>
   
     <link rel="shortcut icon" href="https://pic.imgdb.cn/item/624aa2ca239250f7c5145d0d.png">
   
@@ -275,173 +275,250 @@
 
       
       <!-- body -->
-      <div class="blank" style="padding-top: 0px;"></div>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
 <div id="content" class="site-content">
-  
-  <div class="notice" style="margin-top:60px">
-    <audio id="mymusic" src="" loop="loop"></audio>
-    <i class="iconfont icon-notification" onClick="play()">
-    </i>
-    <div class="notice-content">便利店营业时间 08:00 ~ 22:00</div>
-    <script>
-      function play() {
-        var audio = document.getElementById('mymusic');
-        if (audio.paused) {
-            audio.play();
-        }else{
-            audio.pause();
-            audio.currentTime = 0;//音乐从头播放
-        }
-      }
-    </script>
-  </div>
-  
-  <div class="top-feature-row">
-  <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
-  <i class="fa fa-anchor" aria-hidden="true">
-  </i>
-  兴趣</h1>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="https://github.com/12thstan" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/12thstan/cdn/img/startdash/04.gif">
-        </div>
-        <div class="info">
-          <h3>Github</h3>
-          <p></p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="https://gitee.com/c12th" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/12thstan/cdn/img/startdash/05.gif">
-        </div>
-        <div class="info">
-          <h3>Gitee</h3>
-          <p></p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="https://space.bilibili.com/28517585" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/12thstan/cdn/img/startdash/03.gif">
-        </div>
-        <div class="info">
-          <h3>Bilibili</h3>
-          <p></p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-</div>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-      <i class="fa fa-envira" aria-hidden="true"></i>
-      发现</h1>
-      
-  
-    
-  
-  
-    
-      
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-thumb">
-    <a href="/post/1.html">
-      
-        <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://pic.imgdb.cn/item/626e3242239250f7c515bad1.jpg">
-      
-      </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2022-5-6 20:05
-      </div>
-      <a href="/post/1.html" class="post-title">
-        <h3>如何优雅的加速Github</h3>
-      </a>
-      <div class="post-meta">
-        <span>
-          
-        </span>
-        <span><i class="fa fa-tags"></i>
+      <article id="post-1"
+        class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content">  -->
+        <!--套嵌目录使用（主要为了支援评论）-->
         
-            <a href="/tags/%E5%88%86%E4%BA%AB/">分享<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/">实用小技巧</a>
-          
-        </span>
-        <!-- <span><i class="iconfont icon-attention"></i>
-          本页共<span id="busuanzi_value_page_pv"> </span>次阅读
-        </span> -->
-      </div>
-      <div class="float-content">
-        <p style="color: #666;">
-        
-          
-            前言
-加速的方法有多种，这里只演示我常用的三种方法。
+        <div class="entry-content">
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p><font size=3>加速的方法有多种，这里只演示我常用的三种方法。</font></p>
+</blockquote>
+<p>平常我们浏览Github的时候，常常都会遇到 <strong><font color=red>服务器抽风</font></strong> 的问题，面对这些问题有下面 <strong>三种解决方法</strong> 。</p>
+<span id="more"></span>
+<hr>
+<h1 id="Steam"><a href="#Steam" class="headerlink" title="Steam + +"></a><a target="_blank" rel="noopener" href="https://steampp.net/">Steam + +</a></h1><img src="https://pic.imgdb.cn/item/624af1da239250f7c5c4ac72.png" width="500">
 
-平常我们浏览Github的时候，常常都会遇到
-          
-        
-        </p>
-        <div class="post-bottom">
-          <a href="/post/1.html" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
+<p align = "center">Steam + +</p>
+
+<p>Steam + +<br><strong>多平台Steam辅助工具箱，对于经常访问Steam社区的同学应该不陌生，Steam + +不仅可以加速 <font color=red>Steam社区</font> ，还能加速 <font color=#99A9BF> Github 、一些主流启动器 、微软商店 </font> 和 <font color=#99A9BF> P站 </font></strong>(Pixiv是一个以插图、漫画和小说、艺术为中心的社交网络服务里的虚拟社区网站) <strong>等。</strong> <em>因为Steam + + 主要面向Steam，所以这里主要说明加速Github。Steam + + 还有很多强大的功能，请自行下载体验。</em> <strong><font color=red>（第一次使用需要在软件里安装SSL证书。）</font></strong></p>
+<hr>
+<h1 id="UsbEAm-Hosts-Editor"><a href="#UsbEAm-Hosts-Editor" class="headerlink" title="UsbEAm Hosts Editor"></a><a target="_blank" rel="noopener" href="https://www.dogfight360.com/blog/475/">UsbEAm Hosts Editor</a></h1><img src="https://pic.imgdb.cn/item/624af1da239250f7c5c4ac82.png" width="500">
+
+<p align = "center">UsbEAm Hosts Editor</p>
+
+<p>UsbEAm Hosts Editor<br><strong>强大的多平台加速工具 <font color=cyan>羽翼城 大佬yyds</font></strong></p>
+<p><strong>使用教程：</strong></p>
+<ol>
+<li>选择 <font color=blue>Github - 开源社区</font></li>
+</ol>
+<img src="https://pic.imgdb.cn/item/624af1da239250f7c5c4ac79.png"  height="180" width="200" >
+
+<ol start="2">
+<li>推荐选择 <font color=blue>上图二选一</font> <em>只测试并使用过这两个，其他请自行测试</em></li>
+<li><font color=blue>检测延迟</font></li>
+<li><font color=blue>应用选中</font> 选择 <strong>延迟最小</strong> <strong><font color=red>（第一次使用需要在软件里安装SSL证书）</font></strong></li>
+</ol>
+<hr>
+<h1 id="手动配置Hosts"><a href="#手动配置Hosts" class="headerlink" title="手动配置Hosts"></a><a target="_blank" rel="noopener" href="https://github.com/521xueweihan/GitHub520">手动配置Hosts</a></h1><blockquote>
+<p><font size=3>第三种方法参考 <a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv10607526">原文</a> ，该说明为<font color=red>修改版</font>。</font></p>
+</blockquote>
+<p><strong>感谢<font color=cyan> 削微寒 大佬 </font>提供解决方案</strong><br><strong>感谢<font color=cyan> Acwinuxos系统 </font>原文整理</strong></p>
+<p><strong>修改教程：</strong></p>
+<ul>
+<li><p>点击下载<br><strong><del>点击<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@main/hosts">下载Hosts</a></del></strong><br><del><strong>作者更新了，去</strong><font color=blue> 复制粘贴 </font><strong>最新 -&gt; 2022-01-01T00:05:46+08:00</strong></del><br><del><strong>作者更新了，去</strong><font color=blue> 复制粘贴 </font><strong>最新 -&gt; 2022-01-01T20:07:29+08:00</strong></del><br><del><strong>作者更新了，去</strong><font color=blue> 复制粘贴 </font><strong>最新 -&gt; 2022-01-02T10:21:15+08:00</strong></del><br><strong>作者更新了，去</strong><font color=blue> 复制粘贴 </font><strong>最新 -&gt; 2022-01-02T14:06:24+08:00</strong><br><strong><font color=red>已停止同步更新，如需最新Hosts配置，可到作者Github查看，或使用作者提供的方法。</font></strong></p>
+</li>
+<li><p>复制粘贴（2022-01-02）</p>
+</li>
+</ul>
+<pre class=" language-txt"><code class="language-txt"># GitHub520 Host Start
+140.82.112.26                 alive.github.com
+140.82.114.25                 live.github.com
+185.199.108.154               github.githubassets.com
+140.82.114.21                 central.github.com
+185.199.108.133               desktop.githubusercontent.com
+185.199.108.153               assets-cdn.github.com
+185.199.108.133               camo.githubusercontent.com
+185.199.108.133               github.map.fastly.net
+199.232.69.194                github.global.ssl.fastly.net
+140.82.113.3                  gist.github.com
+185.199.108.153               github.io
+140.82.112.4                  github.com
+192.0.66.2                    github.blog
+140.82.114.5                  api.github.com
+185.199.108.133               raw.githubusercontent.com
+185.199.108.133               user-images.githubusercontent.com
+185.199.108.133               favicons.githubusercontent.com
+185.199.108.133               avatars5.githubusercontent.com
+185.199.108.133               avatars4.githubusercontent.com
+185.199.108.133               avatars3.githubusercontent.com
+185.199.108.133               avatars2.githubusercontent.com
+185.199.108.133               avatars1.githubusercontent.com
+185.199.108.133               avatars0.githubusercontent.com
+185.199.108.133               avatars.githubusercontent.com
+140.82.113.9                  codeload.github.com
+54.231.133.17                 github-cloud.s3.amazonaws.com
+52.217.95.25                  github-com.s3.amazonaws.com
+52.216.153.172                github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.199.249                github-production-user-asset-6210df.s3.amazonaws.com
+52.217.200.1                  github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.108.153               githubstatus.com
+64.71.144.202                 github.community
+23.100.27.125                 github.dev
+185.199.108.133               media.githubusercontent.com
+185.199.108.133               cloud.githubusercontent.com
+185.199.108.133               objects.githubusercontent.com
+
+
+# Update time: 2022-01-02T14:06:24+08:00
+# Update url: https://raw.hellogithub.com/hosts
+# Star me: https://github.com/521xueweihan/GitHub520
+# GitHub520 Host End
+</code></pre>
+<ol>
+<li>先 <del><font color=blue>下载</font> 或</del> <font color=blue>复制</font> Hosts内容 <strong>↑ ↑ ↑</strong></li>
+<li>找到 <strong>Hosts文件所在系统的目录</strong><blockquote>
+<blockquote>
+<p>Windows 系统： <strong>C:\Windows\System32\drivers\etc\hosts</strong><br>Linux 系统： <strong>&#x2F;etc&#x2F;hosts</strong><br>Mac（苹果电脑）系统： <strong>&#x2F;etc&#x2F;hosts</strong></p>
+</blockquote>
+</blockquote>
+</li>
+<li>把 <del><font color=blue>下载</font> 或</del> <font color=blue>复制</font> 的内容 <strong>复制到文本末尾</strong><blockquote>
+<blockquote>
+<p>Windows <strong>使用记事本</strong> 打开<br>Linux、Mac <strong>使用 Root 权限：sudo vi &#x2F;etc&#x2F;hosts</strong> 打开</p>
+</blockquote>
+</blockquote>
+</li>
+<li>保存后激活，<strong>刷新 DNS</strong><blockquote>
+<blockquote>
+<p>Windows：<strong>在 CMD 窗口输入：ipconfig &#x2F;flushdns</strong><br>Linux 命令：<strong>sudo nscd restart，<font color=red>如报错则需要安装：sudo apt install nscd 或 sudo &#x2F;etc&#x2F;init.d&#x2F;nscd restart</font></strong><br>Mac 命令：<strong>sudo killall -HUP mDNSResponder</strong></p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<p>由于作者更新较为频繁，而且作者也提供了更新Hosts配置的方法。 <del>其实是我懒</del></p>
+<p><strong>作者在 <a target="_blank" rel="noopener" href="https://github.com/521xueweihan/GitHub520">Github</a> 上提供了 <font color=blue>4 种</font> 更新Hosts配置的方法，这里列举 1 种。</strong><br><strong>Chrome 插件方法：</strong></p>
+<ol>
+<li>下载 <strong><a target="_blank" rel="noopener" href="https://codeload.github.com/gauseen/faster-hosts/zip/master">FasterHosts</a></strong></li>
+<li>解压后找到“<font color=blue> extension </font>”文件夹</li>
+<li>打开 <strong>Chrome</strong> ，输入： <strong><font color=blue> chrome:&#x2F;&#x2F;extensions&#x2F; </font><strong>，</strong><font color=red> 这里要开启「开发者模式」 </font></strong></li>
+<li>选择 <strong><font color=blue>「加载已解压的扩展程序」</font></strong> ，然后定位到刚才解压的文件夹里面的 “ <strong><font color=blue>extension</font></strong> ”文件夹， <strong><font color=blue>确定</font></strong></li>
+</ol>
+<hr>
+<h1 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h1><p><strong>感谢<font color=cyan> X. I .U 大佬 </font>的脚本</strong><br><strong>有一种不需要额外软件加速的方法：</strong></p>
+<ol>
+<li>安装 <a target="_blank" rel="noopener" href="https://www.tampermonkey.net/">油猴插件</a> ， <strong><font color=red> 安装正式版「Tampermonkey Stable」 </font></strong></li>
+<li>安装 <a target="_blank" rel="noopener" href="https://greasyfork.org/zh-CN/scripts/412245-github-%E5%A2%9E%E5%BC%BA-%E9%AB%98%E9%80%9F%E4%B8%8B%E8%BD%BD">Github 增强</a> 脚本即可</li>
+<li>一般默认即可，如需 <strong>点击切换</strong> 即可</li>
+</ol>
+<img src="https://pic.imgdb.cn/item/624af1da239250f7c5c4ac6a.png"  height="240" width="230" >
+
+<hr>
+<h1 id="容易遇到的问题"><a href="#容易遇到的问题" class="headerlink" title="容易遇到的问题"></a>容易遇到的问题</h1><p><strong>使用以上方法</strong>(除新增)，<strong>在本地推送到github仓库上时容易出现的问题：</strong><br><strong><code>fatal: unable to access '<a target="_blank" rel="noopener" href="https://github.com/.......&#39;">https://github.com/.......&#39;</a>: OpenSSL SSL_read: Connection was reset</code></strong><br>解决方法 <font color=blue>关闭ssl验证</font></p>
+<pre class=" language-bash"><code class="language-bash">  <span class="token function">git</span> config --global http.sslVerify <span class="token string">"false"</span>
+</code></pre>
+<p><font size=3>重新推送即可</font></p>
+<hr>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><blockquote>
+<p><strong>搭建博客上传到Github仓库</strong> 或 <strong>克隆Github上的主题</strong>，推荐采用 <strong>第一种</strong> 、 <strong>第二种</strong> 和 <strong>第三种</strong> 方法。</p>
+</blockquote>
+<blockquote>
+<p>第三种方法 Hosts 配置，这里已停止同步更新，如需最新配置可到作者Github上查看。</p>
+</blockquote>
+<blockquote>
+<p>使用上面的方法也会概率性出现服务器抽风，不要方，你只需要刷新，等待，重启软件……</p>
+</blockquote>
+<hr>
+
         </div>
-      </div>
-    </div>
-  </div>
-</article>
-     
-  
 
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/12thstan/cdn/img/custom/donate/AliPay.png"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/12thstan/cdn/img/custom/donate/wechat.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent">
+        </div>
+        <!-- 评分 -->
+        <div class="single-reward">
+          
+        </div>
+        <!-- 自定义署名方式 -->
+        <footer class="post-footer">
+          <div class="post-lincenses" style="color: #ff9966;">
+            欢迎转载，转载时请注明来源哦！
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" style="color: #ff9966;" target="_blank"
+              rel="nofollow">
+              <i class="fa fa-creative-commons" aria-hidden="true"></i>ncsa4.0</a>
+          </div>
+          
+          <div class="post-tags" style="color: #a39391">
+            <span><i class="fa fa-tags"></i>
+              
+              <a href="/tags/%E5%88%86%E4%BA%AB/" style="color: #716e77;">分享<em>·</em></a>
+              
+            </span>
+            <span>
+              <i class="iconfont icon-file"></i>
+              
+              <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" style="color: #716e77;">实用小技巧</a>
+              
+            </span>
+          </div>
+          
+          <div class="post-share" >
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+        <!-- <div class="tag-cloud">
+          <div class="tag-cloud-title">
+          </div>
+          <div class="tag-cloud-tags">
+            <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 10px; color: #f06966">分享</a>
+          </div>
+        </div> -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+      </section>
+      <!-- 加密文章隐藏评论 -->
+      <section class="comment" >
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container" class="comment"></div> 
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script>
+<script type="text/javascript">
+	var gitalk = new Gitalk({
+  	clientID: '',
+  	clientSecret: '',
+  	repo: 'cungudafa.github.io',
+  	owner: 'cungudafa',
+	admin: ['cungudafa'],
+	distractionFreeMode: 'true',
+    id: md5(location.pathname)
+})
+gitalk.render('gitalk-container') 
+</script>
 
-    </main>
-  </div>
-  
+      </section>
+      <!-- 加密文章隐藏作者信息 -->
+      
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
-<!-- js -->
 
 
+<!--评论配置-->
 
 
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/hititle.js"></script>
-
-
-
-
-
-
-
-  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-
-
-<!-- daovoice聊天功能 -->
-
-
-<!-- weather -->
-  
 
       <!-- body.end -->
     </div>
