@@ -26,7 +26,7 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 cungudafa"
+            content: "这里是 Reverse"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
