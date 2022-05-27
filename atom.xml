@@ -6,7 +6,7 @@
   <link href="https://sakuraplus.c12th.cn/atom.xml" rel="self"/>
   
   <link href="https://sakuraplus.c12th.cn/"/>
-  <updated>2022-05-11T10:24:26.088Z</updated>
+  <updated>2022-05-27T10:03:14.496Z</updated>
   <id>https://sakuraplus.c12th.cn/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>白嫖cloudflare实现网址短链接</title>
+    <link href="https://sakuraplus.c12th.cn/post/2.html"/>
+    <id>https://sakuraplus.c12th.cn/post/2.html</id>
+    <published>2022-05-27T09:27:00.000Z</published>
+    <updated>2022-05-27T10:03:14.496Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=3&gt; 该教程为较详细的文字版，可能与视频演示顺序有所区别。&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=3&gt;原教程源自 b站up主 &lt;a href=&quot;https://www.bilibili.com/video/BV1qB4y117q1&quot;&gt;大c很闲&lt;/a&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="白嫖小技巧" scheme="https://sakuraplus.c12th.cn/categories/%E7%99%BD%E5%AB%96%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="白嫖" scheme="https://sakuraplus.c12th.cn/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="分享" scheme="https://sakuraplus.c12th.cn/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何优雅的加速Github</title>
     <link href="https://sakuraplus.c12th.cn/post/1.html"/>
     <id>https://sakuraplus.c12th.cn/post/1.html</id>
     <published>2022-05-06T12:05:00.000Z</published>
-    <updated>2022-05-11T10:24:26.088Z</updated>
+    <updated>2022-05-27T09:50:12.870Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
