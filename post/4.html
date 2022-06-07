@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <!-- cungudafa百度收录验证编号 -->
+  <!-- <meta name="baidu-site-verification" content="LukfTcyXmC" /> -->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">Python日记 -- 百度OCR翻译 | Reverse -s blog</title>
+  
+    <link rel="shortcut icon" href="https://pic.imgdb.cn/item/624aa2ca239250f7c5145d0d.png">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/style.css" type="text/css" media="all" id="saukra_css-css">
+  <link rel="stylesheet" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/jquery.fancybox.min.css" media="all">  
+  <link rel="stylesheet" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/tags.css" media="all">
+  
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/logo.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/logo2.css">
+  
+  <script src="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/jquery.min.js"></script>
+
+  <!-- 分析 -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+  <!-- Baidu Analytics -->
+
+  
+  <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+  " type="text/css" media="all"> -->
+  <script>
+    /*Initial Variables*/
+    var mashiro_option = new Object();
+    var mashiro_global = new Object();
+    mashiro_option.NProgressON = true;
+    /* 
+    * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+    * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+    */
+    mashiro_option.email_domain = "";
+    mashiro_option.email_name = "";
+    mashiro_option.cookie_version_control = "";
+    mashiro_option.qzone_autocomplete = false;
+    mashiro_option.site_name = "";
+    mashiro_option.author_name = "";
+    mashiro_option.site_url = "https://sakuraplus.c12th.cn/";
+    mashiro_option.v_appId = "";//
+    mashiro_option.v_appKey = "";//
+    mashiro_option.mathjax = "1";
+    mashiro_option.copyright_enable = "true" ;
+    mashiro_option.copyright_minCharNumber = parseInt("120") ;
+    mashiro_option.copyright_description = "本文章著作权归作者所有，任何形式的转载都请注明出处。" ;
+    mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+    mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+    // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+    // mashiro_option.float_player_on = true;
+
+    /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+    var bg = "https://pic.imgdb.cn/item/624aa2ca239250f7c5145d1d.jpg,https://pic.imgdb.cn/item/624aa2ca239250f7c5145d18.jpg,https://pic.imgdb.cn/item/624aa2ca239250f7c5145d11.jpg,https://pic.imgdb.cn/item/624aa2ca239250f7c5145d09.jpg,https://pic.imgdb.cn/item/626e3242239250f7c515bad6.png,https://pic.imgdb.cn/item/626e3242239250f7c515bad1.jpg,https://pic.imgdb.cn/item/626e3242239250f7c515baca.jpg,https://img.afqaq.com/images/2022/03/10/dcd0aa28f3537f720adbdf7f9f0625b6_preview-00_00_00-00_00_30.gif".split(",");
+    var bgindex = Math.floor(Math.random()*bg.length);
+    if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+      alert('朋友，IE浏览器未适配哦~');
+    }
+  </script>
+<meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Reverse -s blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head> 
+
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <!-- Dynamic sliders -->
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <!-- Main content -->
+  <section id="main-container">
+    <!-- Top menu -->
+    <div class="headertop filter-dot">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://sakuraplus.c12th.cn/">
+          <img src="https://unpkg.com/reverse-stu-allversions@1.0.0/img/202203071633899.gif">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>做自己喜欢做的事</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="https://gitee.com/c12th" target="_blank" class="social-github" title="gitee">
+                    <img src="https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/gitee.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://github.com/12thstan" target="_blank" class="social-github" title="github">
+                    <img src="https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://blog.csdn.net/qq_39788788" target="_blank" class="social-github" title="csdn">
+                    <img src="https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/csdn.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://space.bilibili.com/28517585" target="_blank" class="social-github" title="bilibili">
+                    <img src="https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/bilibili.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://music.163.com/#/user/home?id=447726912" target="_blank" class="social-github" title="wangyiyun">
+                    <img src="https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/wangyiyun.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  
+  <div id="video-container">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <!-- banner -->
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+        <span class="site-title">
+            <span class="logolink logo">
+                <a href="/">
+                    <ruby>
+                    <span class="sakuraso"></span>
+                    <span class="no">Reverse</span>
+                    <span class="shironeko"></span>
+                    <rp></rp>
+                    <rt class="logo"></rt>
+                    <rp></rp>
+                    </ruby>
+                  </a>
+            </span>
+          </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a target="_blank" rel="noopener" href="https://blog.c12th.cn">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    主站
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/analytics/">
+                          <i class="fa fa-line-chart" aria-hidden="true"></i>
+                          统计
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags">
+                          <i class="fa fa-tags" aria-hidden="true"></i>
+                          标签
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/about/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      
+      <!-- body -->
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/sharejs.css">
+<link rel="stylesheet" href="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1"
+        class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content">  -->
+        <!--套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p><font size=3>最近写了个 <strong><font size=3 color="green">丐版</font></strong> 的 <strong>百度 OCR 翻译</strong> ，其实网络上也有很多类似的源码。</font></p>
+</blockquote>
+<blockquote>
+<p><font size=3>该教程为 <strong><font size=3 color="green">简化版</font></strong> ，详细查看 <a target="_blank" rel="noopener" href="https://ai.baidu.com/ai-doc/OCR/9kibizye4">技术文档</a> ， <strong><font size=3 color="red">支持 python 版本 2.7.+ 和 3.+</font></strong> </font></p>
+</blockquote>
+<span id="more"></span>
+<hr>
+<img src="https://npm.elemecdn.com/reverse-stu-allversions@1.0.14/img/2022.6.2-1.gif" />
+
+<p><strong><p align = "center">效果展示</p></strong></p>
+<hr>
+<h1 id="百度OCR"><a href="#百度OCR" class="headerlink" title="百度OCR"></a>百度OCR</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li><p><a target="_blank" rel="noopener" href="https://login.bce.baidu.com/">登录</a> &#x2F; <a target="_blank" rel="noopener" href="https://passport.baidu.com/v2/?reg">注册</a> 百度账号</p>
+</li>
+<li><p>创建 <a target="_blank" rel="noopener" href="https://console.bce.baidu.com/ai/?_=1654272722032&fromai=1#/ai/ocr/app/create">通用场景OCR</a> ，<font size="3" color="blue">应用归属</font> 选择 <code>个人</code> ，<font size="3" color="blue">应用名称</font> 和 <font size="3" color="blue">应用描述</font> <strong>自定义</strong></p>
+</li>
+<li><p>填完以上信息后，点击 <code>立即创建</code> <strong><font size="3" color="red">(注意要实名认证)</font></strong></p>
+</li>
+<li><p>此时，<font size="3" color="blue">应用列表</font> 会出现 <strong>刚创建好的应用</strong> ，分别把 <code>AppID</code> 、 <code>API Key</code> 和 <code>Secret Key</code> <strong>记录好</strong> 等下用</p>
+</li>
+</ol>
+<hr>
+<h2 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h2><ol>
+<li>当前版本为 <font size="3" color="blue">python 3.8.1</font> <strong><font size="3" color="red">(PIL 在 python3 时，第三方库应安装 pillow)</font></strong></li>
+</ol>
+<pre class=" language-python"><code class="language-python">    <span class="token comment" spellcheck="true"># 截图</span>
+    <span class="token keyword">import</span> keyboard
+    <span class="token keyword">import</span> time
+    <span class="token keyword">from</span> PIL <span class="token keyword">import</span> ImageGrab
+
+
+    keyboard<span class="token punctuation">.</span>wait<span class="token punctuation">(</span>hotkey<span class="token operator">=</span><span class="token string">'ctrl+c'</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 触发按键</span>
+
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">)</span>                    <span class="token comment" spellcheck="true"># 延迟</span>
+
+    <span class="token comment" spellcheck="true"># 保存图片</span>
+    image <span class="token operator">=</span> ImageGrab<span class="token punctuation">.</span>grabclipboard<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    image<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'OCR.png'</span><span class="token punctuation">)</span>               <span class="token comment" spellcheck="true"># 图片命名为'OCR.png'</span>
+</code></pre>
+<ol start="2">
+<li>安装 <strong>OCR Python SDK</strong></li>
+</ol>
+<pre class=" language-bash"><code class="language-bash">  pip <span class="token function">install</span> baidu-aip
+</code></pre>
+<ol start="3">
+<li>配置 <strong>OCR</strong></li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://ai.baidu.com/ai-doc/OCR/wkibizyjk#%E6%96%B0%E5%BB%BAaipocr">配置AipOcr</a> ，把在 <strong>准备工作</strong> 获取的 <code>AppID</code> 、 <code>API Key</code> 和 <code>Secret Key</code> <font size="3" color="blue">对应填入</font></li>
+</ul>
+<pre class=" language-python"><code class="language-python">  <span class="token comment" spellcheck="true"># 配置AipOcr</span>
+  <span class="token keyword">from</span> aip <span class="token keyword">import</span> AipOcr
+
+  APP_ID <span class="token operator">=</span> <span class="token string">'你的 App ID'</span>
+  API_KEY <span class="token operator">=</span> <span class="token string">'你的 Api Key'</span>
+  SECRET_KEY <span class="token operator">=</span> <span class="token string">'你的 Secret Key'</span>
+
+  client <span class="token operator">=</span> AipOcr<span class="token punctuation">(</span>APP_ID<span class="token punctuation">,</span> API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://ai.baidu.com/ai-doc/OCR/7kibizyfm">接口说明</a></li>
+</ul>
+<pre class=" language-python"><code class="language-python">  <span class="token keyword">def</span> <span class="token function">get_file_content</span><span class="token punctuation">(</span>filePath<span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'OCR.png'</span><span class="token punctuation">,</span> <span class="token string">"rb"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> fp<span class="token punctuation">:</span>
+         <span class="token keyword">return</span> fp<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+   image <span class="token operator">=</span> get_file_content<span class="token punctuation">(</span><span class="token string">'OCR.png'</span><span class="token punctuation">)</span>
+    
+   <span class="token comment" spellcheck="true"># 调用通用文字识别（标准版）</span>
+   res_image <span class="token operator">=</span> client<span class="token punctuation">.</span>basicGeneral<span class="token punctuation">(</span>image<span class="token punctuation">)</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span>res_image<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><strong>删减 + 筛选数据</strong></li>
+</ul>
+<pre class=" language-python"><code class="language-python">      <span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'OCR.png'</span><span class="token punctuation">,</span> <span class="token string">"rb"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> fp<span class="token punctuation">:</span>
+        image <span class="token operator">=</span> fp<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment" spellcheck="true"># 调用通用文字识别（标准版）</span>
+        res_image <span class="token operator">=</span> client<span class="token punctuation">.</span>basicGeneral<span class="token punctuation">(</span>image<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># print(res_image)</span>
+
+        <span class="token comment" spellcheck="true"># 筛选数据</span>
+        res <span class="token operator">=</span> res_image<span class="token punctuation">[</span><span class="token string">'words_result'</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> res<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">[</span><span class="token string">'words'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h1 id="有道翻译"><a href="#有道翻译" class="headerlink" title="有道翻译"></a>有道翻译</h1><ul>
+<li>用到了 <strong>爬虫</strong> ， <strong><font size="3" color="red">网上有教程，不细说</font></strong></li>
+</ul>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> requests
+<span class="token keyword">import</span> json
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> random
+<span class="token keyword">import</span> hashlib
+
+
+<span class="token comment" spellcheck="true"># 网址</span>
+url <span class="token operator">=</span> <span class="token string">'https://fanyi.youdao.com/translate_o?smartresult=dict&amp;smartresult=rule'</span>
+
+<span class="token comment" spellcheck="true"># 反爬</span>
+header <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+    <span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36'</span><span class="token punctuation">,</span>
+    <span class="token string">'Cookie'</span><span class="token punctuation">:</span> <span class="token string">'OUTFOX_SEARCH_USER_ID=1870252624@10.110.96.157; OUTFOX_SEARCH_USER_ID_NCOO=1338974472.751384; ___rl__test__cookies=1654489795853'</span><span class="token punctuation">,</span>
+    <span class="token string">'Referer'</span><span class="token punctuation">:</span> <span class="token string">'https://fanyi.youdao.com/'</span>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+
+<span class="token comment" spellcheck="true"># 时间戳</span>
+r <span class="token operator">=</span> str<span class="token punctuation">(</span>int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># print(r)</span>
+
+<span class="token comment" spellcheck="true"># 随机数</span>
+random_num <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">)</span>
+i <span class="token operator">=</span> r <span class="token operator">+</span> str<span class="token punctuation">(</span>random_num<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># print(i)</span>
+
+<span class="token keyword">def</span> <span class="token function">data_new</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true"># md5</span>
+    str_sign <span class="token operator">=</span> <span class="token string">"fanyideskweb"</span> <span class="token operator">+</span> e <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">"Ygy_4c=r#e#4EX^NUGUc5"</span>
+    md5 <span class="token operator">=</span> hashlib<span class="token punctuation">.</span>md5<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    md5<span class="token punctuation">.</span>update<span class="token punctuation">(</span>str_sign<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    sign <span class="token operator">=</span> md5<span class="token punctuation">.</span>hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># print(sign)</span>
+
+    data_old <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+        <span class="token string">'i'</span><span class="token punctuation">:</span> e<span class="token punctuation">,</span>
+        <span class="token string">'from'</span><span class="token punctuation">:</span> <span class="token string">'AUTO'</span><span class="token punctuation">,</span>
+        <span class="token string">'to'</span><span class="token punctuation">:</span> <span class="token string">'AUTO'</span><span class="token punctuation">,</span>
+        <span class="token string">'smartresult'</span><span class="token punctuation">:</span> <span class="token string">'dict'</span><span class="token punctuation">,</span>
+        <span class="token string">'client'</span><span class="token punctuation">:</span> <span class="token string">'fanyideskweb'</span><span class="token punctuation">,</span>
+        <span class="token string">'salt'</span><span class="token punctuation">:</span> i<span class="token punctuation">,</span>
+        <span class="token string">'sign'</span><span class="token punctuation">:</span> sign<span class="token punctuation">,</span>
+        <span class="token string">'lts'</span><span class="token punctuation">:</span> r<span class="token punctuation">,</span>
+        <span class="token string">'bv'</span><span class="token punctuation">:</span> <span class="token string">'dbf26599b4389c828cae8b896c9b0708'</span><span class="token punctuation">,</span>
+        <span class="token string">'doctype'</span><span class="token punctuation">:</span> <span class="token string">'json'</span><span class="token punctuation">,</span>
+        <span class="token string">'version'</span><span class="token punctuation">:</span> <span class="token string">'2.1'</span><span class="token punctuation">,</span>
+        <span class="token string">'keyfrom'</span><span class="token punctuation">:</span> <span class="token string">'fanyi.web'</span><span class="token punctuation">,</span>
+        <span class="token string">'action'</span><span class="token punctuation">:</span> <span class="token string">'FY_BY_REALTlME'</span>
+    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+    <span class="token keyword">return</span> data_old
+
+
+a <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">'请输入需要翻译的内容：\n'</span><span class="token punctuation">)</span>
+data <span class="token operator">=</span> data_new<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 请求</span>
+result <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token punctuation">,</span>headers<span class="token operator">=</span>header<span class="token punctuation">,</span>data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>text
+<span class="token comment" spellcheck="true"># print(result)</span>
+
+<span class="token comment" spellcheck="true"># 数据筛选</span>
+dict_res <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>dict_res<span class="token punctuation">[</span><span class="token string">'translateResult'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'tgt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><ul>
+<li>增加 <strong>复制</strong> 和 <strong>弹窗</strong> 功能 <del>加了些花里胡哨的东西</del></li>
+</ul>
+<pre class=" language-python"><code class="language-python">    <span class="token keyword">import</span> pyperclip
+    <span class="token keyword">import</span> tkinter <span class="token keyword">as</span> tk
+
+    
+    <span class="token comment" spellcheck="true"># copy</span>
+    pyperclip<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token string">'\n'</span> <span class="token operator">+</span> b<span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.02</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 弹窗</span>
+    root <span class="token operator">=</span> tk<span class="token punctuation">.</span>Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    root<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"info"</span><span class="token punctuation">)</span>
+    tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>root<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">"已复制"</span><span class="token punctuation">,</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true"># 弹窗显示</span>
+    root<span class="token punctuation">.</span>after<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">,</span> <span class="token keyword">lambda</span><span class="token punctuation">:</span> root<span class="token punctuation">.</span>destroy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true"># 停留1s</span>
+    root<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h2 id="打包前-完整代码"><a href="#打包前-完整代码" class="headerlink" title="打包前 完整代码"></a>打包前 完整代码</h2><ol>
+<li>演示版本为 <font size="3" color="blue">python 3.8.1</font> ， <font size="3" color="red">如出现报错请自行解决</font></li>
+</ol>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 工程：test</span>
+<span class="token comment" spellcheck="true"># 创建时间：2022/6/2 11:41</span>
+<span class="token comment" spellcheck="true"># encoding:utf-8</span>
+
+
+<span class="token keyword">import</span> keyboard
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> requests
+<span class="token keyword">import</span> random
+<span class="token keyword">import</span> hashlib
+<span class="token keyword">import</span> json
+<span class="token keyword">import</span> configparser
+<span class="token keyword">import</span> pyperclip
+<span class="token keyword">import</span> tkinter <span class="token keyword">as</span> tk
+<span class="token keyword">from</span> PIL <span class="token keyword">import</span> ImageGrab
+<span class="token keyword">from</span> aip <span class="token keyword">import</span> AipOcr
+
+
+<span class="token comment" spellcheck="true"># 读取ini文件</span>
+aip <span class="token operator">=</span> <span class="token string">'OCR.ini'</span>
+conf <span class="token operator">=</span> configparser<span class="token punctuation">.</span>ConfigParser<span class="token punctuation">(</span><span class="token punctuation">)</span>
+conf<span class="token punctuation">.</span>read<span class="token punctuation">(</span>aip<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 配置AipOcr</span>
+APP_ID <span class="token operator">=</span> conf<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'aip'</span><span class="token punctuation">,</span> <span class="token string">'APP_ID'</span><span class="token punctuation">)</span>              <span class="token comment" spellcheck="true"># 你的 App ID</span>
+API_KEY <span class="token operator">=</span> conf<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'aip'</span><span class="token punctuation">,</span> <span class="token string">'API_KEY'</span><span class="token punctuation">)</span>            <span class="token comment" spellcheck="true"># 你的 Api Key</span>
+SECRET_KEY <span class="token operator">=</span> conf<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'aip'</span><span class="token punctuation">,</span> <span class="token string">'SECRET_KEY'</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 你的 Secret Key</span>
+
+client <span class="token operator">=</span> AipOcr<span class="token punctuation">(</span>APP_ID<span class="token punctuation">,</span> API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span>
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true">#   --------------- 截图识别 --------------</span>
+    <span class="token comment" spellcheck="true"># 截图</span>
+    keyboard<span class="token punctuation">.</span>wait<span class="token punctuation">(</span>hotkey<span class="token operator">=</span><span class="token string">'ctrl+c'</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 触发按键</span>
+
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">)</span>                    <span class="token comment" spellcheck="true"># 延迟</span>
+
+    <span class="token comment" spellcheck="true"># 保存图片</span>
+    image <span class="token operator">=</span> ImageGrab<span class="token punctuation">.</span>grabclipboard<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    image<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'OCR.png'</span><span class="token punctuation">)</span>               <span class="token comment" spellcheck="true"># 图片命名为'OCR.png'</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'识别中...'</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">with</span> open<span class="token punctuation">(</span><span class="token string">'OCR.png'</span><span class="token punctuation">,</span> <span class="token string">"rb"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> fp<span class="token punctuation">:</span>
+        image <span class="token operator">=</span> fp<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment" spellcheck="true"># 调用通用文字识别（标准版）</span>
+        res_image <span class="token operator">=</span> client<span class="token punctuation">.</span>basicGeneral<span class="token punctuation">(</span>image<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># print(res_image)</span>
+
+        <span class="token comment" spellcheck="true"># 筛选数据</span>
+        all_text <span class="token operator">=</span> <span class="token string">''</span>
+        res <span class="token operator">=</span> res_image<span class="token punctuation">[</span><span class="token string">'words_result'</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> res<span class="token punctuation">:</span>
+            all_text <span class="token operator">+=</span> i<span class="token punctuation">[</span><span class="token string">'words'</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">'\n'</span>
+        a <span class="token operator">=</span> all_text
+        <span class="token keyword">print</span><span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">*</span> <span class="token number">70</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true">#   --------------- 有道翻译 --------------</span>
+    <span class="token comment" spellcheck="true"># 网址</span>
+    url <span class="token operator">=</span> <span class="token string">'https://fanyi.youdao.com/translate_o?smartresult=dict&amp;smartresult=rule'</span>
+
+    <span class="token comment" spellcheck="true"># 反爬</span>
+    header <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+        <span class="token string">'User-Agent'</span><span class="token punctuation">:</span> conf<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'config'</span><span class="token punctuation">,</span> <span class="token string">'User-Agent'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token string">'Cookie'</span><span class="token punctuation">:</span> conf<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'config'</span><span class="token punctuation">,</span> <span class="token string">'Cookie'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token string">'Referer'</span><span class="token punctuation">:</span> <span class="token string">'https://fanyi.youdao.com/'</span>
+    <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+
+    <span class="token comment" spellcheck="true"># 时间戳</span>
+    r <span class="token operator">=</span> str<span class="token punctuation">(</span>int<span class="token punctuation">(</span>time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># print(r)</span>
+
+    <span class="token comment" spellcheck="true"># 随机数</span>
+    random_num <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span>
+    i <span class="token operator">=</span> r <span class="token operator">+</span> str<span class="token punctuation">(</span>random_num<span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># print(i)</span>
+
+
+    <span class="token keyword">def</span> <span class="token function">data_new</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># md5</span>
+        str_sign <span class="token operator">=</span> <span class="token string">"fanyideskweb"</span> <span class="token operator">+</span> e <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">"Ygy_4c=r#e#4EX^NUGUc5"</span>
+        md5 <span class="token operator">=</span> hashlib<span class="token punctuation">.</span>md5<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        md5<span class="token punctuation">.</span>update<span class="token punctuation">(</span>str_sign<span class="token punctuation">.</span>encode<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        sign <span class="token operator">=</span> md5<span class="token punctuation">.</span>hexdigest<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># print(sign)</span>
+
+        data_old <span class="token operator">=</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+            <span class="token string">'i'</span><span class="token punctuation">:</span> e<span class="token punctuation">,</span>
+            <span class="token string">'from'</span><span class="token punctuation">:</span> <span class="token string">'AUTO'</span><span class="token punctuation">,</span>
+            <span class="token string">'to'</span><span class="token punctuation">:</span> <span class="token string">'AUTO'</span><span class="token punctuation">,</span>
+            <span class="token string">'smartresult'</span><span class="token punctuation">:</span> <span class="token string">'dict'</span><span class="token punctuation">,</span>
+            <span class="token string">'client'</span><span class="token punctuation">:</span> <span class="token string">'fanyideskweb'</span><span class="token punctuation">,</span>
+            <span class="token string">'salt'</span><span class="token punctuation">:</span> i<span class="token punctuation">,</span>
+            <span class="token string">'sign'</span><span class="token punctuation">:</span> sign<span class="token punctuation">,</span>
+            <span class="token string">'lts'</span><span class="token punctuation">:</span> r<span class="token punctuation">,</span>
+            <span class="token string">'bv'</span><span class="token punctuation">:</span> conf<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'config'</span><span class="token punctuation">,</span> <span class="token string">'bv'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token string">'doctype'</span><span class="token punctuation">:</span> <span class="token string">'json'</span><span class="token punctuation">,</span>
+            <span class="token string">'version'</span><span class="token punctuation">:</span> <span class="token string">'2.1'</span><span class="token punctuation">,</span>
+            <span class="token string">'keyfrom'</span><span class="token punctuation">:</span> <span class="token string">'fanyi.web'</span><span class="token punctuation">,</span>
+            <span class="token string">'action'</span><span class="token punctuation">:</span> <span class="token string">'FY_BY_REALTlME'</span>
+        <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+        <span class="token keyword">return</span> data_old
+
+    data <span class="token operator">=</span> data_new<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># 请求</span>
+    result <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token punctuation">,</span> headers<span class="token operator">=</span>header<span class="token punctuation">,</span> data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">.</span>text
+    <span class="token comment" spellcheck="true"># print(result)</span>
+
+    <span class="token comment" spellcheck="true"># 数据筛选</span>
+    dict_res <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    b <span class="token operator">=</span> dict_res<span class="token punctuation">[</span><span class="token string">'translateResult'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'tgt'</span><span class="token punctuation">]</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>b <span class="token operator">+</span> <span class="token string">'\n'</span><span class="token punctuation">)</span>
+
+    <span class="token comment" spellcheck="true"># copy</span>
+    pyperclip<span class="token punctuation">.</span>copy<span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token string">'\n'</span> <span class="token operator">+</span> b<span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">0.02</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 弹窗</span>
+    root <span class="token operator">=</span> tk<span class="token punctuation">.</span>Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    root<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"info"</span><span class="token punctuation">)</span>
+    tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>root<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">"已复制"</span><span class="token punctuation">,</span> <span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>       <span class="token comment" spellcheck="true"># 弹窗显示</span>
+    root<span class="token punctuation">.</span>after<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">,</span> <span class="token keyword">lambda</span><span class="token punctuation">:</span> root<span class="token punctuation">.</span>destroy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment" spellcheck="true"># 停留1s</span>
+    root<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<ol start="2">
+<li>创建 <code>OCR.ini</code> 文件，<font size="3" color="blue">复制以下内容</font> ， 把在 <strong>准备工作</strong> 获取的 <code>AppID</code> 、 <code>API Key</code> 和 <code>Secret Key</code> <font size="3" color="blue">对应填入</font></li>
+</ol>
+<pre class=" language-ini"><code class="language-ini"><span class="token selector">[aip]</span>
+<span class="token constant">APP_ID</span> <span class="token attr-value"><span class="token punctuation">=</span> 	</span>
+<span class="token constant">API_KEY</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+<span class="token constant">SECRET_KEY</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+
+<span class="token selector">[config]</span>
+<span class="token constant">User-Agent</span> <span class="token attr-value"><span class="token punctuation">=</span> Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36</span>
+
+<span class="token constant">Cookie</span> <span class="token attr-value"><span class="token punctuation">=</span> OUTFOX_SEARCH_USER_ID=1870252624@10.110.96.157; OUTFOX_SEARCH_USER_ID_NCOO=1338974472.751384; ___rl__test__cookies=1654489795853</span>
+
+<span class="token constant">bv</span> <span class="token attr-value"><span class="token punctuation">=</span> dbf26599b4389c828cae8b896c9b0708</span>
+</code></pre>
+<ol start="3">
+<li>最后自行打包 <strong><font size="3" color="blue">(不打包在pycharm里也能用)</font></strong></li>
+</ol>
+<pre><code>  pyinstaller -F 文件名.py
+
+  # pyinstaller -F 文件名.pyw
+</code></pre>
+<hr>
+<h2 id="打包后-使用教程"><a href="#打包后-使用教程" class="headerlink" title="打包后 使用教程"></a>打包后 使用教程</h2><blockquote>
+<p><font size="3" ><strong>代码已打包上传到 <a target="_blank" rel="noopener" href="https://github.com/12thstan/baidu-OCR-fanyi">github</a> 和 <a target="_blank" rel="noopener" href="https://gitee.com/c12th/baidu-OCR-fanyi">gitee</a> 上</strong></font></p>
+</blockquote>
+<ul>
+<li>打开 <code>new_OCR\dist\OCR.ini</code> 文件，把在 <strong>准备工作</strong> 获取的 <code>AppID</code> 、 <code>API Key</code> 和 <code>Secret Key</code> <font size="3" color="blue">对应填入</font> ， <strong>运行exe文件</strong> 即可</li>
+</ul>
+<pre class=" language-ini"><code class="language-ini"><span class="token selector">[aip]</span>
+<span class="token constant">APP_ID</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+<span class="token constant">API_KEY</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+<span class="token constant">SECRET_KEY</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+</code></pre>
+<hr>
+<ul>
+<li><font size="3" color="red">如出现闪退</font> &#x2F; <font size="3" color="blue">想换成自己的</font> , <font size="3" color="red">请</font> &#x2F; <font size="3" color="blue">可</font> 更换以下内容</li>
+</ul>
+<pre class=" language-ini"><code class="language-ini"><span class="token selector">[config]</span>
+<span class="token constant">User-Agent</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+
+<span class="token constant">Cookie</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+
+<span class="token constant">bv</span> <span class="token attr-value"><span class="token punctuation">=</span> </span>
+</code></pre>
+<ul>
+<li>方法如下</li>
+</ul>
+<ol>
+<li><p><strong>F12</strong> 打开 <strong>开发者工具</strong> ，选择 <font size="3" color="blue">Network</font> ， 然后选择 <font size="3" color="red">XHR</font></p>
+</li>
+<li><p>在 <strong>翻译框</strong> 输入任意 <strong>文字</strong> ，<strong>页面</strong> 会出现 <font size="3" color="blue">translate_</font> <font size="3" color="red">(如有多个选最新)</font></p>
+</li>
+<li><p>点击 <font size="3" color="blue">translate_</font> ，在 <font size="3" color="blue">Headers</font> 页面可以找到 <code>User-Agent</code> 和 <code>Cookie</code> ,在 <font size="3" color="blue">Payload</font> 页面可以找到<code>bv</code> <strong><font size="3" color="red">(火狐浏览器的 <code>bv</code> 在请求页面)</font></strong></p>
+</li>
+<li><p>把找到的内容 <font size="3" color="blue">替换 ini 文件内容</font> ，<font size="3" color="red">重新运行</font> 即可</p>
+</li>
+<li><p>如 <strong>不清楚文字描述</strong> 可按 <font size="3" color="red">如图 1 所示</font> 步骤 即可</p>
+</li>
+</ol>
+<img src="https://npm.elemecdn.com/reverse-stu-allversions@1.0.15/img/2022.6.2-2.gif" width="700" />
+
+<p align = "center">图 1</p>
+
+<hr>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><blockquote>
+<p><font size="3">代码已在 <a target="_blank" rel="noopener" href="https://github.com/12thstan/baidu-OCR-fanyi">github</a> 和 <a target="_blank" rel="noopener" href="https://gitee.com/c12th/baidu-OCR-fanyi">gitee</a> 上开源</font></p>
+</blockquote>
+<blockquote>
+<p><font size="3"><strong><font size="3" color="cyan">这个百度 OCR 只能翻译第一行的内容，多行无法翻译</font></strong> </font></p>
+</blockquote>
+<blockquote>
+<p><font size="3"><p class="faa-horizontal">个人版的调用次数已经够用了，不建议多对一，建议一对一</p></font></p>
+</blockquote>
+<hr>
+
+        </div>
+
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://pic.imgdb.cn/item/624aa2db239250f7c51480ed.jpg"></li>
+                <li class="wechat-code"><img src="https://pic.imgdb.cn/item/624aa2db239250f7c51480f0.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent">
+        </div>
+        <!-- 评分 -->
+        <div class="single-reward">
+          
+        </div>
+        <!-- 自定义署名方式 -->
+        <footer class="post-footer">
+          <div class="post-lincenses" style="color: #ff9966;">
+            欢迎转载，转载时请注明来源哦！
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" style="color: #ff9966;" target="_blank"
+              rel="nofollow">
+              <i class="fa fa-creative-commons" aria-hidden="true"></i>ncsa4.0</a>
+          </div>
+          
+          <div class="post-tags" style="color: #a39391">
+            <span><i class="fa fa-tags"></i>
+              
+              <a href="/tags/%E5%88%86%E4%BA%AB/" style="color: #716e77;">分享<em>·</em></a>
+              
+              <a href="/tags/python/" style="color: #716e77;">python<em>·</em></a>
+              
+            </span>
+            <span>
+              <i class="iconfont icon-file"></i>
+              
+              <a href="/categories/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/" style="color: #716e77;">学习日记</a>
+              
+            </span>
+          </div>
+          
+          <div class="post-share" >
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+        <!-- <div class="tag-cloud">
+          <div class="tag-cloud-title">
+          </div>
+          <div class="tag-cloud-tags">
+            <a href="/tags/python/" style="font-size: 10px; color: #f06966">python</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 20px; color: #39bae8">分享</a> <a href="/tags/%E7%99%BD%E5%AB%96/" style="font-size: 10px; color: #f06966">白嫖</a>
+          </div>
+        </div> -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+          
+            <div class="post-nepre full next">
+              
+              <a href="/post/3.html" rel="next">
+                <div class="background">
+                  <img class="lazyload" src="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/orange.progress-bar-stripe-loader.svg" data-src=""
+                    style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                    onerror="imgError(this,3)" src="">
+                </div>
+                <span class="label">Next Post</span>
+                <div class="info">
+                  <h3>把github贡献日历部署到博客上(二)</h3>
+                  <hr>
+                </div>
+              </a>
+            </div>
+            
+      </section>
+      <!-- 加密文章隐藏评论 -->
+      <section class="comment" >
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container" class="comment"></div> 
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="/js/md5.min.js"></script>
+<script type="text/javascript">
+	var gitalk = new Gitalk({
+  	clientID: '',
+  	clientSecret: '',
+  	repo: 'cungudafa.github.io',
+  	owner: 'cungudafa',
+	admin: ['cungudafa'],
+	distractionFreeMode: 'true',
+    id: md5(location.pathname)
+})
+gitalk.render('gitalk-container') 
+</script>
+
+      </section>
+      <!-- 加密文章隐藏作者信息 -->
+      
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+<!--评论配置-->
+
+
+
+      <!-- body.end -->
+    </div>
+    <!-- search -->    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            // PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- footer-->    
+    
+    <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        <div class="footertext">
+          <div class="img-preload">
+              <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+              <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+          </div>
+        </div>
+        <!-- 网站数据统计 -->
+        <div class="footer-device">
+          <p style="font-family: 'Ubuntu', sans-serif;">
+            <span style="color: #ff9999;padding-left: 20px;">
+                <!-- 网站运行时间统计 -->
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span id="time" align="center">载入时间中...</span>
+                <script>
+                var now = new Date(); 
+                function createtime() { 
+                      var grt= new Date("Sat May 07 2022 05:10:00 GMT+0800 (GMT+08:00)");//在此处修改你的建站时间
+                      now.setTime(now.getTime()+250); 
+                      days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+                      hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+                      if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+                      mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+                      seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+                      snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+                      document.getElementById("time").innerHTML = "小破站在各种灾难中苟活了 "+ dnum +" 天 "+hnum + " 小时 " + mnum + " 分 " + snum + " 秒";      
+                  } 
+                  setInterval("createtime()",250);
+                </script>
+            </span> 
+          </p>
+        </div>
+        <div class="footer-device">
+          <p style="font-family: 'Ubuntu', sans-serif;">
+            <span style="color: #b9b9b9;padding-left: 20px;">
+              <!-- 全网站字数统计wordcount -->
+              
+              <i class="fa fa-line-chart"  aria-hidden="true" style="color: #ff9999;display:inline-block"></i> 博客全站共: <span class="post-count" style="color:#ff9999;">3.5k</span>字</span>
+              
+              <!-- 不蒜子网页计数器 -->
+              
+              <span style="padding-left: 20px;"><i class="fa fa-fire" aria-hidden="true" style="color: #ff9999;display:inline-block"></i><span id="busuanzi_container_site_pv">总访问量： <span id="busuanzi_value_site_pv" style="color:#ff9999;"></span>次</span>
+              </span>
+              
+              
+              <span style="padding-left: 20px;"><i class="fa fa-user" aria-hidden="true" style="color: #ff9999;display:inline-block"></i><span id="busuanzi_container_site_uv">总访问人数： <span id="busuanzi_value_site_uv" style="color:#ff9999;"></span>人</span>
+              </span>
+              
+            </span>
+          </p>
+        </div>
+        <!-- 作者注明 -->
+        <div class="footer-device">
+          <p style="font-family: 'Ubuntu', sans-serif;">
+              <span style="color: #b9b9b9;">
+                Copyright &copy; 2022
+                &nbsp;<a style="color: #ff9999;display:inline-block"> Reverse </a>
+                &nbsp;<i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> 
+                &nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank" style="color: #ff9999;display:inline-block">Hexo</a>
+                |&nbsp;Theme&nbsp;<a href="https://gitee.com/cungudafa/hexo-theme-sakuraplus" target="_blank" style="color: #ff9999;display:inline-block">SakuraPlus</a>
+              </span>
+          </p>
+        </div>
+         <!-- 网站作者版权注明 -->
+         
+          <div id="footer-info" class="inner">
+            <p style="font-family: 'Ubuntu', sans-serif;">
+              <span style="color: #ff9999;">
+                
+              </span>
+            </p>
+          </div>
+        
+    </div><!-- .site-info -->
+</footer>
+
+
+<script type="text/javascript" src="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/lib.min.js"></script>
+<script src="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/clipboard.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/sakura-app.js"></script>
+
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- fancybox大图查看 需jq -->
+
+  <script type="text/javascript" src="https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/jquery.fancybox.min.js"></script>
+  <script>
+    $('[data-fancybox="images"]').fancybox({
+      thumbs : {
+        autoStart : true //缩略图
+      }
+    });
+    $('[data-fancybox]').fancybox({
+      protect: true,//图片右键不能下载
+      youtube : {
+          controls : 0,
+          showinfo : 0
+      },
+      vimeo : {
+          color : 'f00'
+      }
+    });
+  </script>
+
+
+<!-- 自适应浏览器 -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    var Poi = {"pjax":"0","movies":{"url": "https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/img","name":"iot 01.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  } else {
+    var Poi = {"pjax":"0","movies":{"url": "https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/img","name":"iot 01.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  }
+  /* ]]> */
+  
+  </script>
+  <script>
+  $(document).ready(function() {
+    if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+      if ($(".pattern-center").length > 0) { //有图的情况
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -400,
+            scrollSmoothOffset: -85
+        });
+      } else {
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -85,
+            scrollSmoothOffset: -85
+        });
+      }
+      var offsetTop = $('.toc').offset().top - 95;
+      window.onscroll = function() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop >= offsetTop) {
+          $('.toc').addClass('toc-fixed');
+        } else {
+          $('.toc').removeClass('toc-fixed');
+        }
+      }
+    }
+  });
+  </script>
+    <!-- Side menu -->
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <!-- Floating window -->
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://unpkg.com/reverse-stu-allversions@1.0.0/img/202203071633899.gif">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px"></p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="https://github.com/12thstan" class="fa fa-github" target="_blank" style="color: #333; margin-left: 20px"></a>
+      
+        <a href="https://blog.csdn.net/qq_39788788" class="fa fa-star" target="_blank" style="color: #ff9900; margin-left: 20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a target="_blank" rel="noopener" href="https://blog.c12th.cn">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            主站
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/analytics/">
+                  <i class="fa fa-line-chart" aria-hidden="true"></i>
+                  统计
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                  标签
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/about/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2020 hexo-sakuraplus</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    enable="true"
+
+    id="4989347813"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+>
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
+   <!-- pages壁纸切换 -->
+ 
+    <div class="skin-menu no-select" id="mainskin"  style="position: fixed">
+        <div class="theme-controls row-container">
+            <ul class="menu-list">
+                <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+                <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+                <li id="gribs-bg"> <i class="fa fa-slack" aria-hidden="true"></i></li>
+                <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+                <li id="totem-bg"> <i class="fa fa-optin-monster" aria-hidden="true"></i></li>
+                <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+                <li id="bing-bg"> <i class="iconfont icon-bing"></i></li>
+                <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <div class="font-family-controls row-container">
+            <button type="button" class="control-btn-serif selected" data-mode="serif" onclick="mashiro_global.font_control.change_font()">Serif</button>
+            <button type="button" class="control-btn-sans-serif" data-mode="sans-serif" onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
+        </div>
+    </div>   
+    <canvas id="night-mode-cover"></canvas> 
+        <div class="changeSkin-gear no-select">
+        <div class="keys" id="setbtn"> <span id="open-skinMenu"> 切换壁纸 | SCHEME TOOL 
+            &nbsp;<i class="iconfont icon-gear inline-block rotating"></i> </span></div>
+    </div><!-- skin.end -->
+
+  <!-- left side bar -->
+
+ </body>
+</html>
