@@ -6,7 +6,7 @@
   <link href="https://sakuraplus.c12th.cn/atom.xml" rel="self"/>
   
   <link href="https://sakuraplus.c12th.cn/"/>
-  <updated>2022-06-07T08:35:12.734Z</updated>
+  <updated>2022-06-07T08:53:27.172Z</updated>
   <id>https://sakuraplus.c12th.cn/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://sakuraplus.c12th.cn/post/4.html"/>
     <id>https://sakuraplus.c12th.cn/post/4.html</id>
     <published>2022-06-02T12:27:00.000Z</published>
-    <updated>2022-06-07T08:35:12.734Z</updated>
+    <updated>2022-06-07T08:53:27.172Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;font size=3&gt;最近写了个 &lt;strong&gt;&lt;font size=3 color=&quot;green&quot;&gt;丐版&lt;/font&gt;&lt;/strong&gt; 的 &lt;strong&gt;百度 OCR 翻译&lt;/strong&gt; ，其实网络上也有很多类似的源码。&lt;/font&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;font size=3&gt;该教程为 &lt;strong&gt;&lt;font size=3 color=&quot;green&quot;&gt;简化版&lt;/font&gt;&lt;/strong&gt; ，详细查看 &lt;a href=&quot;https://ai.baidu.com/ai-doc/OCR/9kibizye4&quot;&gt;技术文档&lt;/a&gt; ， &lt;strong&gt;&lt;font size=3 color=&quot;red&quot;&gt;支持 python 版本 2.7.+ 和 3.+&lt;/font&gt;&lt;/strong&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=3&gt;该教程为 &lt;strong&gt;&lt;font size=3 color=&quot;green&quot;&gt;简化版&lt;/font&gt;&lt;/strong&gt; ，详细查看 &lt;a href=&quot;https://ai.baidu.com/ai-doc/OCR/9kibizye4&quot;&gt;技术文档&lt;/a&gt; ， &lt;strong&gt;&lt;font size=3 color=&quot;red&quot;&gt;支持 python 版本 2.7.+ 和 3.+ 。&lt;/font&gt;&lt;/strong&gt; &lt;/font&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
@@ -86,9 +86,9 @@
     <category term="白嫖小技巧" scheme="https://sakuraplus.c12th.cn/categories/%E7%99%BD%E5%AB%96%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     
     
-    <category term="分享" scheme="https://sakuraplus.c12th.cn/tags/%E5%88%86%E4%BA%AB/"/>
-    
     <category term="白嫖" scheme="https://sakuraplus.c12th.cn/tags/%E7%99%BD%E5%AB%96/"/>
+    
+    <category term="分享" scheme="https://sakuraplus.c12th.cn/tags/%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
