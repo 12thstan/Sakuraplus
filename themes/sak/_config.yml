@@ -4,7 +4,7 @@ prefixName:  #小字
 siteName: 
 # favicon and site master avatar
 favicon: https://pic.imgdb.cn/item/624aa2ca239250f7c5145d0d.png
-avatar: https://npm.elemecdn.com/reverse-stu-allversions@1.0.0/img/202203071633899.gif
+avatar: https://unpkg.com/reverse-stu-allversions@1.0.0/img/202203071633899.gif
 url: https://sakuraplus.c12th.cn/
 description: 做自己喜欢做的事
 
@@ -60,14 +60,14 @@ menus:
 
 #social  url, img PC端配置
 social:
-  gitee: {url: https://gitee.com/c12th, img: https://npm.elemecdn.com/reverse-stu-allversions@1.0.5/sakurapuls/img/gitee.png}
-  github: {url: https://github.com/12thstan, img: https://npm.elemecdn.com/reverse-stu-allversions@1.0.5/sakurapuls/img/github.png}
-  csdn: {url: https://blog.csdn.net/qq_39788788, img: https://npm.elemecdn.com/reverse-stu-allversions@1.0.5/sakurapuls/img/csdn.png}
+  gitee: {url: https://gitee.com/c12th, img: https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/gitee.png}
+  github: {url: https://github.com/12thstan, img: https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/github.png}
+  csdn: {url: https://blog.csdn.net/qq_39788788, img: https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/csdn.png}
   # zhihu: {url: https://www.zhihu.com/people/cungudafa, img: /img/social/zhihu.png}
   #jianshu: {url: /https://www.jianshu.com/u/9b726a534140, img: /img/social/jianshu.png}
   # sina: {url: http://weibo.com/3829198906/info, img: /img/social/sina.png}
-  bilibili: {url: https://space.bilibili.com/28517585, img: https://npm.elemecdn.com/reverse-stu-allversions@1.0.5/sakurapuls/img/bilibili.png}
-  wangyiyun: {url: https://music.163.com/#/user/home?id=447726912, img: https://npm.elemecdn.com/reverse-stu-allversions@1.0.5/sakurapuls/img/wangyiyun.png}
+  bilibili: {url: https://space.bilibili.com/28517585, img: https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/bilibili.png}
+  wangyiyun: {url: https://music.163.com/#/user/home?id=447726912, img: https://unpkg.com/reverse-stu-allversions@1.0.5/sakurapuls/img/wangyiyun.png}
   # wechat: {url: /#, qrcode: /img/custom/cungudafa.png, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置
@@ -111,13 +111,13 @@ notice: 便利店营业时间 08:00 ~ 22:00
 # 首页提示音
 myvoice: # https://cdn.jsdelivr.net/gh/cungudafa/cdn@latest/music/lovingstrangers.mp3
 # 缓加载动画
-lazyloadImg: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/orange.progress-bar-stripe-loader.svg # https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/orange.progress-bar-stripe-loader.svg # https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/loader/orange.progress-bar-stripe-loader.svg
 
 # startdash url, title, desc img
 startdash: 
   - {url: https://github.com/12thstan, title: Github, desc: , img: https://img.afqaq.com/images/2022/03/11/d148790fdff2be4cd1029ce0dafd050b_preview-00_00_00-00_00_30.gif}
   - {url: https://gitee.com/c12th, title: Gitee, desc: , img: https://img.afqaq.com/images/2022/03/11/f95defc7440e627c3e0029229245e860_preview-00_00_00-00_00_30.gif}
-  - {url: https://space.bilibili.com/28517585, title: Bilibili, desc: , img: https://npm.elemecdn.com/reverse-stu-allversions@1.0.0/img/03.gif}
+  - {url: https://space.bilibili.com/28517585, title: Bilibili, desc: , img: https://unpkg.com/reverse-stu-allversions@1.0.0/img/03.gif}
 
 # 首页文章排序规则
 # Home page sort type: -1: newer first，1: older first.首页文章排序规则
@@ -144,7 +144,7 @@ donate:
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
-  url: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/img # https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  url: https://unpkg.com/reverse-stu-allversions@1.0.1/img # https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
   name: iot 01.mp4 #Unbroken.mp4
 
@@ -332,38 +332,38 @@ js:
 libs:
   css:
     googlefonts: https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC
-    style: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/style.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css #/css/style.css # 
-    lib: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/lib.min.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/lib.min.css
-    font: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/font.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/font.css
+    style: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/style.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/style.css #/css/style.css # 
+    lib: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/lib.min.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/lib.min.css
+    font: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/font.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/font.css
     insight: /css/insight.css
-    tags: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/tags.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/tags.css
-    fancybox: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/jquery.fancybox.min.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/jquery.fancybox.min.css
-    sharejs: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/sharejs.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/sharejs.css
-    tocbot: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/tocbot.css # https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css
-    live2d_widget: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/font-awesome.min.css # https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+    tags: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/tags.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/tags.css
+    fancybox: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/jquery.fancybox.min.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/jquery.fancybox.min.css
+    sharejs: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/sharejs.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/sharejs.css
+    tocbot: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/tocbot.css # https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css
+    live2d_widget: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/font-awesome.min.css # https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
     logo:
       enable: true # 自定义logo
-      logo: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/logo.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/logo.css
-      logo_fonts: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/css/logo2.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/fonts/LOGO/logo.css
+      logo: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/logo.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/css/logo.css
+      logo_fonts: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/css/logo2.css # https://cdn.jsdelivr.net/gh/cungudafa/cdn/fonts/LOGO/logo.css
   js:
-    jquery: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/jquery.min.js # https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
+    jquery: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/jquery.min.js # https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js
     linkcard: /js/linkcard.js
-    lib: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/lib.min.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/lib.min.js
-    clipboard: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/clipboard.min.js # https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
-    InsightSearch: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/InsightSearch.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/InsightSearch.js
-    sakura_app: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/sakura-app.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/sakura-app.js  #/js/sakura-app.js
+    lib: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/lib.min.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/lib.min.js
+    clipboard: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/clipboard.min.js # https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
+    InsightSearch: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/InsightSearch.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/InsightSearch.js
+    sakura_app: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/sakura-app.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/sakura-app.js  #/js/sakura-app.js
     busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js 
-    fancybox: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/jquery.fancybox.min.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/jquery.fancybox.min.js
-    echarts: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/echarts.min.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/echarts.min.js
-    valine: https://npm.elemecdn.com/valine/dist/Valine.min.js
-    sakura_petal: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/sakura.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js #other
-    hititle: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/hititle.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/hititle.js 
-    KeyBlock: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/noSomeKey.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/noSomeKey.js #按键屏蔽,不能F12调试和查看源代码
-    sakura_petals: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/sakura2.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js  #仅在首页花瓣飘落（大内存）
-    snow_petals: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/snow1.js # https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/js/snow1.js
-    piao: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/piao.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js #飘动彩带
-    live2d_widget: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/autoload.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/live2d-widget/autoload.js
-    word: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/shehuizhuyi.js # https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js #点击出现字效
-    love: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/love.js # https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js #点击出现爱心
-    cursor: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/sakurapuls/js/cursor.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.2/js/cursor.js # 星星跟随坠落(大内存)
+    fancybox: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/jquery.fancybox.min.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/jquery.fancybox.min.js
+    echarts: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/echarts.min.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/js/echarts.min.js
+    valine: https://unpkg.com/valine/dist/Valine.min.js
+    sakura_petal: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/sakura.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js #other
+    hititle: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/hititle.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/hititle.js 
+    KeyBlock: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/noSomeKey.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/noSomeKey.js #按键屏蔽,不能F12调试和查看源代码
+    sakura_petals: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/sakura2.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js  #仅在首页花瓣飘落（大内存）
+    snow_petals: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/snow1.js # https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/js/snow1.js
+    piao: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/piao.js # https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js #飘动彩带
+    live2d_widget: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/autoload.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn/live2d-widget/autoload.js
+    word: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/shehuizhuyi.js # https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js #点击出现字效
+    love: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/love.js # https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js #点击出现爱心
+    cursor: https://unpkg.com/reverse-stu-allversions@1.0.1/sakurapuls/js/cursor.js # https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.2/js/cursor.js # 星星跟随坠落(大内存)
 
