@@ -144,7 +144,7 @@ donate:
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
-  url: https://npm.elemecdn.com/reverse-stu-allversions@1.0.1/img # https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  url: https://unpkg.com/reverse-stu-allversions@1.0.1/img # https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
   name: iot 01.mp4 #Unbroken.mp4
 
